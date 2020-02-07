@@ -1,0 +1,21 @@
+// Mixins in here
+@mixin funbox($rad, $shadow, $bor, $flx-grw) {
+    border-radius: $rad;
+    -ms-border-radius: $rad;
+    -moz-border-radius: $rad;
+    -webkit-border-radius: $rad;
+    box-shadow: $shadow;
+    border: $bor;
+    flex-grow: $flx-grw;
+}
+
+@mixin funsun($anima, $grad1, $grad2) {
+    -webkit-animation: $anima;
+    -moz-animation: $anima;
+    -o-animation: $anima;
+    animation: $anima;
+    background: -webkit-linear-gradient($grad1, $grad2);
+    background: -o-linear-gradient($grad1, $grad2);
+    background: -moz-linear-gradient($grad1, $grad2);
+    background: -linear-gradient($grad1, $grad2);
+}
