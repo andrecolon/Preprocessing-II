@@ -19,3 +19,10 @@
     background: -moz-linear-gradient($grad1, $grad2);
     background: -linear-gradient($grad1, $grad2);
 }
+
+@mixin funlinks($f-size, $f-weight, $f-padding, $txt-line) {
+    font-size: $f-size;
+    font-weight: $f-weight;
+    padding: $f-padding;
+    text-decoration: $txt-line;
+}
