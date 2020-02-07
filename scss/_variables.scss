@@ -6,3 +6,13 @@ $button-bg: #17A2B8;
 $sandy-beach: #FFEBCD;
 $testbox:#ff6600; //Font sizes
 $f-size: ( "sm": 1.2em, "md": 1.6em, "lg": 2em);
+// Media Queries - !Default aka "unless" the value has not been used
+$breakpoints: (phone: 640px, tablet: 768px, desktop: 1024px) !default;
+// Functions -- Mapping And Keys - with warning
+$colors:( "primary": tomato, "secondary": hotpink);
+@function color($key) {
+    @if not map-has-key($colors, $key) {
+        @warn "Key not found.";
+    }
+    @return map-get($colors, $key);
+}
