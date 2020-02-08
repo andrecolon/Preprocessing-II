@@ -26,3 +26,22 @@
     padding: $f-padding;
     text-decoration: $txt-line;
 }
+
+@mixin media($minw, $maxw, $mobile, $tablet, $desktop) {
+    @media (min-width: $minw) {
+        background: $tablet;
+    }
+    @media (max-width: $maxw) {}
+    @media (max-width: $maxw) {}
+}
+
+
+/*
+section{
+flex-direction: column;
+align-items: center;
+}
+
+.text-content {
+    order: -1;
+} */

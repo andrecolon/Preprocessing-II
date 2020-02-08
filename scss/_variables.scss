@@ -15,4 +15,4 @@ $colors:( "primary": tomato, "secondary": hotpink);
         @warn "Key not found.";
     }
     @return map-get($colors, $key);
-}
+} //Use for @ media
